@@ -579,6 +579,7 @@ function capturePiece(selected, turn, tile, Set, IR, botplaying, bot)
 				if Jumper.Value.CaptureFound.Value == true then
 					going[Set] = true
 					streak[Set] = streak[Set] + 1
+					task.wait(1)
 					tileClick(Set, botplaying, bot)
 				else
 					SMod.finalpos(archive, Vector3.new(tile.Position.X, tile.Position.Y + Hi, tile.Position.Z))
